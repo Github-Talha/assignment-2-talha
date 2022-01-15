@@ -63,6 +63,10 @@ span:hover{
 transform:rotate(360deg) translate(500px);
 transition:5s;
 } */
+#more{
+    background-image: linear-gradient(90deg,#f3f9f9,#84ccc8,#65d1e5);
+    cursor: pointer;
+}
 
 .header-details button, .button{
     padding: 10px;
