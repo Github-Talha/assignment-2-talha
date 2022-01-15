@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+
+}
+/*----------------------start header-------------------------------*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 210px;
+}
+.fa-search,.fa-store{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.fa-bars{
+    font-size: 40px;
+    margin: 10px 30px 0 185px;
+}
+span{
+    margin: 15px 40px;
+    display: inline-block;
+}
+header{
+    display: flex;
+    width: 1400px;
+    height: 550px;
+    align-items: center;
+    justify-content: center;    
+} 
+.header-image img,.header-details{
+    position: relative;
+    right: -100px;
+
+}   
+
+.header-details h1{
+    width: 540px;
+    font-size: 44px;
+}
+#subscribe-button{
+    box-shadow: 0 15px 0 rgb(41, 117, 131);
+    position: relative;
+    top: 0;   
+}
+#subscribe-button:active{
+    top: 10px;
+ box-shadow: 0 5px 0 rgb(41, 117, 131);
+
+}
+span:hover{
+    transform:rotate(360deg);
+    transition: 3s;
+   
+    
+}
+
+/* .welcome:hover>{
+transform:rotate(360deg) translate(500px);
+transition:5s;
+} */
+
+.header-details button, .button{
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(90deg,#f3f9f9,#84ccc8,#65d1e5);
+    cursor: pointer;
+    box-shadow: 0 7px 0 rgb(41, 117, 131);
+    position: relative;
+    top: 0;
+}
+.header-details button,.button:active{
+ top: 5px;
+ box-shadow: 0 2px 0 rgb(41, 117, 131);
+}
+.header-details p{
+    width: 300px;
+}
+
+.popular-collection-text{
+    text-align: center;
+}
+/*------------------------ header end------------------------ */
+
+/*------------------------ main start------------------------ */
+.section-1{
+    display: flex;
+    justify-content:center;
+    
+}
+.items{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    background-color: #a3c0c52f;  
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.11);
+
+}
+.item{
+    Width:300px;
+    Height:476px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
+}
+.rate-details{
+    display:flex;
+}
+.fa-star, .fa-star-half-alt{
+    color: goldenrod;
+}
+.fa-star-half-alt{
+    margin-right: 10px;
+}
+.fa-cart-plus{
+    margin-left: 10px;
+}
+#more{
+    position: absolute;
+    right: 0;
+}
+.main2{
+    display: flex;
+    justify-content: center;
+    
+
+}
+.section-2{
+    width: 1100px;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 60px;
+}
+.section-2-image img{
+    width: 100%;
+}
+.section-2-details{
+    margin-left: 60px;
+}
+/*--------------------- footer start------------------- */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer h1 {
+    font-size: 28px;
+}
+footer p{
+    font-size: 13px;
+    font-weight:400;
+}
+footer i{
+    margin: 10px;
+}
+.fa-copyright{
+    margin: 0;
+}
+/*---- mediaquary-----
+    mobile device
+----------------------- */
+
+@media only screen and (max-width:668px) {
+    .fa-bars{
+        position: absolute;
+        left: -155px;
+    }
+    .fa-store{
+        position:absolute;
+        right: 15px;
+        margin-top: 15px;
+    }
+    span, .fa-search{
+        display: none;
+    }
+    .header{
+        width: 100%;
+        flex-direction: column;
+        height: 0%;
+    }
+    .header-details{
+        text-align: center;
+        margin-top: 50px;
+    }
+    .header-details p{
+     margin-right: 150px;
+     margin-top: 20px;
+
+    }
+    .items{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    .header-image img{
+        width: 100%;
+        position: relative;
+        left: 0;
+    }    
+}
+/*---- mediaquary-----
+    tablet device
+----------------------- */
+@media only screen and (min-width: 669px) and (max-width: 992px) 
+{
+    span{
+        display: none;
+    }
+    .items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+    .header-details{
+        text-align: center;
+    }
+    .header{
+        width: 100%;
+        flex-direction: column;
+        height: 0%;
+    }
+    footer{
+        width: 100%;
+    }
+    
+
+}
