@@ -30,8 +30,13 @@ header{
     width: 1400px;
     height: 550px;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
+       
 } 
+.header-details{
+    position: absolute;
+    left: 50px;
+}
 .header-image img,.header-details{
     position: relative;
     right: -100px;
@@ -41,6 +46,7 @@ header{
 .header-details h1{
     width: 540px;
     font-size: 44px;
+    
 }
 #subscribe-button{
     box-shadow: 0 15px 0 rgb(41, 117, 131);
